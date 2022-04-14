@@ -26,5 +26,5 @@ open http://localhost:3000
 
 Later you can reimport the data (if you're using an ephemeral ES clustic)
 ```
-ProductsIndex.import
+rake es:reload
 ```
