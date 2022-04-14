@@ -1,24 +1,30 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A toy elastic search project.
 
-Things you may want to cover:
+# Dependencies
+- Docker (or your favorite way to run elastic search)
 
-* Ruby version
+First run elastic search
+```
+bin/elatic_search
+```
 
-* System dependencies
+Now import some data
+```
+bundle exec rake fake_data:create NUM=150
+```
 
-* Configuration
+And now you can search
+```
+bin/rails s
 
-* Database creation
+# another window
+open http://localhost:3000
+```
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Later you can reimport the data (if you're using an ephemeral ES clustic)
+```
+ProductsIndex.import
+```

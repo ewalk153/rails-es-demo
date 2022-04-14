@@ -7,7 +7,7 @@ namespace :fake_data do
       num.times do
         Product.create(
           title: Faker::Commerce.product_name,
-          body: Faker::Lorem.paragraphs(number: 1),
+          body: Faker::Hipster.sentences.sample,
           price: Faker::Commerce.price,
           published_at: Faker::Date.backward(days: 50),
         )
