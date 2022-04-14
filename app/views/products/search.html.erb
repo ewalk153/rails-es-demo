@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Find a product</h1>
+
+<%= form_with method: 'get' do |form| %>
+  <%= form.label :query, "Search for:" %>
+  <%= form.text_field :query, value: @query %>
+  <%= form.submit "Search" %>
+<%end %>
+
+<div id="products">
+  <% @products.each do |product| %>
+    <h1><%= product.title %></h1>
+    <p><%= product.body %></p>
+    <b><%= product.price %></b>
+    <p>
+      <%= link_to "Show this product", product_path(product.id) %>
+    </p>
+  <% end %>
+</div>
+

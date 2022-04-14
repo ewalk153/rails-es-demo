@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "chewy", "~> 7.2"
+
+gem "faker", "~> 2.20"

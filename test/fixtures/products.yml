@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyText
+  published_at: 2022-04-13 19:22:49
+  price: 9.99
+
+two:
+  title: MyString
+  body: MyText
+  published_at: 2022-04-13 19:22:49
+  price: 9.99
